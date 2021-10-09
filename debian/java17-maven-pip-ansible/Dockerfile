@@ -1,5 +1,7 @@
 FROM debian:stretch
 
+ENV LANG C.UTF-8
+
 # установка ansible и нужных для ее работы компонентов
 RUN apt-get update
 RUN apt-get install -y gnupg python-pip rsync
